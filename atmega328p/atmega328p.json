@@ -1,0 +1,24 @@
+{
+  "chip": "atmega328p",
+  "version": "1.0.0",
+  "release_tag": "atmega328p-1.0.0",
+  "toolchain_internal": {
+    "compiler": "avr-gcc",
+    "compiler_version": "4.0.0.52",
+    "uploader": "avrdude",
+    "uploader_version": "8.1"
+  },
+  "platforms": {
+    "windows": {
+      "url": "https://github.com/blesson0077/cube-packages/releases/download/atmega328p-1.0.0/atmega328p-1.0.0-win.zip",
+      "sha256": "8174df35dbc475242ef30c9a6e5b7c172e083b600d3dacd74e2af40bc8a8cbce"
+    }
+  },
+  "compiler": {
+    "bin": "toolchain/avr/bin/avr-gcc.exe"
+  },
+  "uploader": {
+    "bin": "uploader/avrdude.exe",
+    "config": "uploader/avrdude.conf"
+  }
+}
