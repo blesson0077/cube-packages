@@ -1,0 +1,70 @@
+{
+  "chip": "esp32e",
+  "name": "ESP32-E",
+  "version": "1.0.0",
+  "description": "Espressif ESP32-E Chipset Package",
+  "vendor": "Espressif",
+  "architecture": "xtensa-lx6",
+  "toolchain_internal": {
+    "compiler": "xtensa-esp32-elf-gcc",
+    "compiler_version": "12.2.0",
+    "uploader": "esptool",
+    "uploader_version": "4.x"
+  },
+  "toolchain": {
+    "windows": {
+      "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.0/esp32e-1.0.0-win.zip",
+      "sha256": "REAL_SHA256_AFTER_UPLOAD",
+      "bin": "toolchain/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe"
+    },
+    "linux": { "url": "", "sha256": "", "bin": "" },
+    "mac": { "url": "", "sha256": "", "bin": "" }
+  },
+  "includes": {
+    "core": [
+      "framework/cores/esp32",
+      "framework/variants/esp32",
+      "framework/sdk/esp32/include"
+    ],
+    "wifi": [
+      "libraries/WiFi/src",
+      "libraries/NetworkClientSecure/src"
+    ],
+    "bluetooth": [
+      "libraries/BluetoothSerial/src",
+      "libraries/BLE/src"
+    ]
+  },
+  "linker": {
+    "flags": [
+      "-mlongcalls",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-Wl,--gc-sections",
+      "-Wl,-static",
+      "-nostdlib"
+    ],
+    "script": "framework/sdk/esp32/ld/esp32.ld",
+    "libs": [
+      "-Lframework/sdk/esp32/lib",
+      "-lapp_trace",
+      "-lapp_update",
+      "-lbootloader_support",
+      "-lesp_wifi",
+      "-lbt",
+      "-lnvs_flash",
+      "-lm",
+      "-lgcc",
+      "-lstdc++"
+    ]
+  },
+  "upload": {
+    "tool": "esptool",
+    "protocol": "uart",
+    "speed": 921600,
+    "flags": ["--chip", "esp32", "--before", "default_reset"]
+  },
+  "dependencies": {
+    "python": null
+  }
+}
