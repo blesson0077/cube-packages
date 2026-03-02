@@ -14,7 +14,7 @@
   "toolchain": {
     "windows": {
       "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.0/esp32e-1.0.0-win.zip",
-      "sha256": "REAL_SHA256_AFTER_UPLOAD",
+      "sha256": "0d1eae577df9fcdb98a5fb26366fc95d5316c3a65f5c6f82e383440932862dbb",
       "bin": "toolchain/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe"
     },
     "linux": { "url": "", "sha256": "", "bin": "" },
