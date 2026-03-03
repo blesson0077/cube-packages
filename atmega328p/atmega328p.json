@@ -11,7 +11,7 @@
   "platforms": {
     "windows": {
       "url": "https://github.com/blesson0077/cube-packages/releases/download/atmega328p-1.0.0/atmega328p-1.0.0-win.zip",
-      "sha256": "8174df35dbc475242ef30c9a6e5b7c172e083b600d3dacd74e2af40bc8a8cbce"
+      "sha256": "314cbf3c582ef0d69074da67cb6a19fcf40ffe68570ef157bce141c2e0e2c468"
     }
   },
   "compiler": {
