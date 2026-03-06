@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0.0",
-  "last_updated": "2026-03-02T00:00:00Z",
+  "last_updated": "2026-03-06T12:00:00Z",
   "packages": [
     {
       "chip": "atmega328p",
@@ -20,13 +20,13 @@
     {
       "chip": "esp32e",
       "name": "ESP32-E",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Espressif ESP32-E Chipset Package",
-      "release_tag": "esp32e-1.0.0",
+      "release_tag": "esp32e-1.0.1",
       "platforms": {
         "windows": {
-          "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.0/esp32e-1.0.0-win.zip",
-          "sha256_url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.0/esp32e-1.0.0.sha256"
+          "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.1/esp32e-1.0.1-win.zip",
+          "sha256_url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.1/esp32e-1.0.1.sha256"
         },
         "linux": { "url": "", "sha256_url": "" },
         "mac": { "url": "", "sha256_url": "" }
