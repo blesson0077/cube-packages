@@ -1,76 +1,81 @@
 {
-  "chip": "esp32e",
-  "name": "ESP32-E",
-  "version": "1.0.2",
-  "description": "Espressif ESP32-E Chipset Package",
-  "vendor": "Espressif",
-  "architecture": "xtensa-lx6",
+"chip": "esp32e",
+"name": "ESP32-E",
+"version": "1.0.3",
+"description": "Espressif ESP32-E Chipset Package",
+"vendor": "Espressif",
+"architecture": "xtensa-lx6",
 
-  "toolchain_internal": {
-    "compiler": "xtensa-esp-elf-g++",
-    "compiler_version": "13.2.0",
-    "uploader": "esptool",
-    "uploader_version": "4.x"
-  },
+"toolchain_internal": {
+"compiler": "xtensa-esp-elf-g++",
+"compiler_version": "13.2.0",
+"uploader": "esptool",
+"uploader_version": "4.x"
+},
 
-  "toolchain": {
-    "windows": {
-      "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.2/esp32e-1.0.2-win.zip",
-      "sha256": "7a4e1c735157de13771cd792269d0568e38d8d9451f684f11209d27dc59d1c79",
-      "bin": "toolchain/xtensa-esp-elf/bin/xtensa-esp-elf-g++.exe"
-    },
-    "linux": { "url": "", "sha256": "", "bin": "" },
-    "mac": { "url": "", "sha256": "", "bin": "" }
-  },
+"toolchain": {
+"windows": {
+"url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.3/esp32e-1.0.3-win.zip",
+"sha256": "c4a8a82f4d264403cfb1250deb87c9a85f13061a37ca4e9e6e9fa92c801a9df9",
+"bin": "toolchain/xtensa-esp-elf/bin/xtensa-esp-elf-g++.exe"
+},
+"linux": { "url": "", "sha256": "", "bin": "" },
+"mac": { "url": "", "sha256": "", "bin": "" }
+},
 
-  "includes": {
-    "core": [
-      "framework/cores/esp32",
-      "framework/variants/esp32",
-      "framework/sdk/esp32/include"
-    ],
-    "wifi": [
-      "libraries/WiFi/src",
-      "libraries/NetworkClientSecure/src"
-    ],
-    "bluetooth": [
-      "libraries/BluetoothSerial/src",
-      "libraries/BLE/src"
-    ]
-  },
+"includes": {
+"core": [
+"framework/cores/esp32",
+"framework/variants/esp32",
+"framework/sdk/esp32/include"
+],
+"wifi": [
+"libraries/WiFi/src",
+"libraries/NetworkClientSecure/src"
+],
+"bluetooth": [
+"libraries/BluetoothSerial/src",
+"libraries/BLE/src"
+]
+},
 
-  "linker": {
-    "flags": [
-      "-mlongcalls",
-      "-ffunction-sections",
-      "-fdata-sections",
-      "-Wl,--gc-sections",
-      "-Wl,-static",
-      "-nostdlib"
-    ],
-    "script": "framework/sdk/esp32/ld/esp32.ld",
-    "libs": [
-      "-Lframework/sdk/esp32/lib",
-      "-lapp_trace",
-      "-lapp_update",
-      "-lbootloader_support",
-      "-lesp_wifi",
-      "-lbt",
-      "-lnvs_flash",
-      "-lm",
-      "-lgcc",
-      "-lstdc++"
-    ]
-  },
+"linker": {
+"flags": [
+"-mlongcalls",
+"-ffunction-sections",
+"-fdata-sections",
+"-Wl,--gc-sections",
+"-Wl,-static",
+"-nostdlib"
+],
+"script": "framework/sdk/esp32/ld/sections.ld",
+"libs": [
+"-Lframework/sdk/esp32/lib",
+"-lapp_trace",
+"-lapp_update",
+"-lbootloader_support",
+"-lesp_wifi",
+"-lbt",
+"-lnvs_flash",
+"-lm",
+"-lgcc",
+"-lstdc++"
+]
+},
 
-  "upload": {
-    "tool": "esptool",
-    "protocol": "uart",
-    "speed": 921600,
-    "flags": ["--chip", "esp32", "--before", "default_reset"]
-  },
+"upload": {
+"tool": "esptool",
+"protocol": "uart",
+"speed": 921600,
+"flags": [
+"--chip",
+"esp32",
+"--before",
+"default_reset"
+]
+},
 
-  "dependencies": {
-    "python": null
-  }
+"dependencies": {
+"python": null
+}
 }
