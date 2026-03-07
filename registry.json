@@ -20,13 +20,13 @@
     {
       "chip": "esp32e",
       "name": "ESP32-E",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "Espressif ESP32-E Chipset Package",
-      "release_tag": "esp32e-1.0.2",
+      "release_tag": "esp32e-1.0.3",
       "platforms": {
         "windows": {
-          "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.2/esp32e-1.0.2-win.zip",
-          "sha256_url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.2/esp32e-1.0.2.sha256"
+          "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.3/esp32e-1.0.3-win.zip",
+          "sha256_url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.3/esp32e-1.0.3.sha256"
         },
         "linux": { "url": "", "sha256_url": "" },
         "mac": { "url": "", "sha256_url": "" }
