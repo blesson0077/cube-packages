@@ -1,28 +1,25 @@
 {
   "chip": "esp32e",
   "name": "ESP32-E",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Espressif ESP32-E Chipset Package",
   "vendor": "Espressif",
   "architecture": "xtensa-lx6",
-
   "toolchain_internal": {
     "compiler": "xtensa-esp-elf-g++",
     "compiler_version": "13.2.0",
     "uploader": "esptool",
     "uploader_version": "4.x"
   },
-
   "toolchain": {
     "windows": {
-      "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.4/esp32e-1.0.4-win.zip",
-      "sha256": "8d4c24fe9b7f5433892d24113314fb7b2eb63cbf1eac3bb018cc6475dcfa2e68",
+      "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.5/esp32e-1.0.5-win.zip",
+      "sha256": "bb638e404d0b16d0534d1ae28d2250220b8929102e185f86ee001111a52c79c9",
       "bin": "toolchain/xtensa-esp-elf/bin/xtensa-esp-elf-g++.exe"
     },
     "linux": { "url": "", "sha256": "", "bin": "" },
     "mac": { "url": "", "sha256": "", "bin": "" }
   },
-
   "includes": {
     "core": [
       "framework/cores/esp32",
@@ -38,7 +35,6 @@
       "libraries/BLE/src"
     ]
   },
-
   "linker": {
     "flags": [
       "-mlongcalls",
@@ -62,7 +58,6 @@
       "-lstdc++"
     ]
   },
-
   "upload": {
     "tool": "esptool",
     "protocol": "uart",
@@ -74,7 +69,6 @@
       "default_reset"
     ]
   },
-
   "dependencies": {
     "python": null
   }
