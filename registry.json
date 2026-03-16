@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0.0",
-  "last_updated": "2026-03-14T14:00:00Z",
+  "last_updated": "2026-03-16T10:45:00Z",
   "packages": [
     {
       "chip": "atmega328p",
@@ -27,6 +27,21 @@
         "windows": {
           "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.5/esp32e-1.0.5-win.zip",
           "sha256_url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.5/esp32e-1.0.5-win.zip.sha256"
+        },
+        "linux": { "url": "", "sha256_url": "" },
+        "mac": { "url": "", "sha256_url": "" }
+      }
+    },
+    {
+      "chip": "stm32f103c6t6a",
+      "name": "STM32F103C6T6A",
+      "version": "1.0.0",
+      "description": "STMicroelectronics STM32F103C6T6A (Blue Pill 32K) Chipset Package",
+      "release_tag": "stm32f103c6t6a-1.0.0",
+      "platforms": {
+        "windows": {
+          "url": "https://github.com/blesson0077/cube-packages/releases/download/stm32f103c6t6a-1.0.0/stm32f103c6t6a-1.0.0-win.zip",
+          "sha256_url": "https://github.com/blesson0077/cube-packages/releases/download/stm32f103c6t6a-1.0.0/stm32f103c6t6a-1.0.0-win.zip.sha256"
         },
         "linux": { "url": "", "sha256_url": "" },
         "mac": { "url": "", "sha256_url": "" }
