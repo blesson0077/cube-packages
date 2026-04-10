@@ -1,7 +1,7 @@
 {
   "chip": "esp32e",
   "name": "ESP32-E",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Espressif ESP32-E Chipset Package",
   "vendor": "Espressif",
   "architecture": "xtensa-lx6",
@@ -13,8 +13,8 @@
   },
   "toolchain": {
     "windows": {
-      "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.6/esp32e-1.0.6-win.zip",
-      "sha256": "34BEE0F700FB23CB4D036D45E4D3919EB000C6530A46EEBFA1E1E37825D676C4",
+      "url": "https://github.com/blesson0077/cube-packages/releases/download/esp32e-1.0.8/esp32e-1.0.8-win.zip",
+      "sha256": "9761ef076baad78e15f653bc9b8153fdd101c7423097be35aa5d62af6814620e",
       "bin": "toolchain/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe"
     },
     "linux": { "url": "", "sha256": "", "bin": "" },
